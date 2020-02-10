@@ -1,0 +1,141 @@
+
+
+body{
+  font-family:Dancing Script;
+  background-color: #02010a;
+}
+
+#contenedor{
+max-width:900px;
+margin:auto;
+
+/* Flexbox */
+display:flex;
+flex-flow:row wrap;
+}
+/*estilos encabezado */
+header {
+  background-color: #5b7989;
+	width:100%;
+  /* Flexbox */
+	display: flex;
+  flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+  flex-wrap:wrap;
+
+}
+header nav {
+  display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+header nav a {
+
+	color:black;
+	text-decoration: none;
+	padding:10px;
+
+	/* Flexbox */
+	flex-grow:1;
+}
+h1{
+  color:black;
+  text-shadow:2px 2px 2px #02010a ;
+
+}
+/* estilos contenido principal*/
+.ContenidoPrincial {
+
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+#imgPrincipal{
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: center;
+  background-color: #82c3a6;
+  padding: 20px 0 20px 0;
+}
+#imgSecundarias{
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  background-color: #d5c75f;
+  padding: 20px 0 20px 0;
+}
+/*Estilos footer */
+
+footer{
+background-color:  #C6d5c5;
+width: 100%;
+padding:20px;
+
+/* Flexbox */
+display: flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+.cajaFooter{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+
+}
+.cajaFooter a{
+  text-decoration: none;
+  color: black;
+}
+
+.cajaFooter li{
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  flex-wrap:wrap;
+
+}
+/* Estilos pagia paisajes*/
+.contenedorPaisajes{
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+#coleccionPaisajes{
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  background-color: #d5c75f;
+}
+#coleccionPaisajes img{
+  padding: 20px 0px 20px  0px;
+}
+
+
+/*Estilos retratos */
+.contenedorRetratos{
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+#coleccionRetratos{
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  background-color: #d5c75f;
+}
+#coleccionRetratos img{
+  padding: 20px 0px 20px  0px;
+}
