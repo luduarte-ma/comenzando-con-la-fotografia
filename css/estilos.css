@@ -3,7 +3,9 @@
 body{
   font-family:Dancing Script;
   background-color: #02010a;
+
 }
+
 
 #contenedor{
 max-width:900px;
@@ -15,6 +17,9 @@ flex-flow:row wrap;
 }
 /*estilos encabezado */
 header {
+ border-radius: 10px 10px 0px 0px;
+-moz-border-radius: 10px 10px 0px 0px;
+-webkit-border-radius: 10px 10px 0px 0px;
   background-color: #5b7989;
 	width:100%;
   /* Flexbox */
@@ -26,6 +31,7 @@ header {
 
 }
 header nav {
+
   display:flex;
 	flex-wrap:wrap;
 	align-items:center;
@@ -40,7 +46,7 @@ header nav a {
 	flex-grow:1;
 }
 h1{
-  color:black;
+  color:white;
   text-shadow:2px 2px 2px #02010a ;
 
 }
@@ -60,6 +66,12 @@ h1{
   justify-content: center;
   background-color: #82c3a6;
   padding: 20px 0 20px 0;
+
+}
+#imgPrincipal img{
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(2,1,10,1);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(2,1,10,1);
+  box-shadow: 2px 2px 2px 0px rgba(2,1,10,1);
 }
 #imgSecundarias{
   width: 100%;
@@ -69,10 +81,42 @@ h1{
   justify-content: space-around;
   background-color: #d5c75f;
   padding: 20px 0 20px 0;
+
 }
+#imgSecundarias img{
+  border: solid 1px;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(2,1,10,1);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(2,1,10,1);
+  box-shadow: 2px 2px 2px 0px rgba(2,1,10,1);
+
+}
+
+/* Animaciones de imagenes secundarias */
+
+#imgSec1:hover{
+-ms-transform: rotate(10deg); /* IE 9 */
+-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+transform: rotate(10deg);
+-webkit-box-shadow: 2px 2px 2px 2px #82c3a6;
+-moz-box-shadow: 2px 2px 2px 2px #82c3a6;
+box-shadow: 2px 2px 2px 2px #82c3a6;
+
+
+}
+
+#imgSec2:hover{
+transform: translate3d(5px, 0px, 20px);
+-webkit-box-shadow: 2px 2px 2px 2px #82c3a6;
+-moz-box-shadow: 2px 2px 2px 2px #82c3a6;
+box-shadow: 2px 2px 2px 2px #82c3a6;
+}
+
 /*Estilos footer */
 
 footer{
+border-radius: 0px 0px 10px 10px;
+-moz-border-radius: 0px 0px 10px 10px;
+-webkit-border-radius: 0px 0px 10px 10px;
 background-color:  #C6d5c5;
 width: 100%;
 padding:20px;
@@ -82,11 +126,11 @@ display: flex;
 flex-wrap:wrap;
 justify-content:center;
 }
+
 .cajaFooter{
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-
 }
 .cajaFooter a{
   text-decoration: none;
